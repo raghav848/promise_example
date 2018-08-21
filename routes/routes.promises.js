@@ -13,12 +13,10 @@ function getData(url){
 
 
     return new Promise(function(resolve,reject){
-        // resolve('hi');
-        reject('hi');
-        // request.get(options,function(err,resp,body){
-        //     if(err) reject(err)
-        //     resolve(body)
-        // })
+        request.get(options,function(err,resp,body){
+            if(err) reject(err)
+            resolve(body)
+        })
     })
 }
 
